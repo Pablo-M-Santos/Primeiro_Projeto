@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - LTV - 2022 - Primeiro Projeto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <h1>Cadastro do Aluno</h1>
+        <form action="">
+            <!-- NOME -->
+            <div class="input">
+                <label for="nome">Nome do Aluno:</label><br>
+                <input type="text" placeholder="Digite seu nome" required>
+            </div>
+            <!-- EMAIL -->
+            <div class="input">
+                <label for="email">Email do Aliuno:</label><br>
+                <input type="email" placeholder="Digite seu Email" required>
+            </div>
+            <!-- TELEFONE -->
+            <div class="input">
+                <label for="fone">Telefone do Aluno:</label><br>
+                <input type="phone" placeholder="Digite seu telefone" required>
+            </div>
+            <!-- CIDADE -->
+            <div class="localizacao">
+                <h2>Escolha a sua Cidade:</h2>
+                <select name="cidade" id="cidade" required>
+                    <option value="For" class="cidade">Fortaleza</option>
+                    <option value="Jer" class="cidade">Jericoacoara</option>
+                    <option value="Cau" class="cidade">Caucaia</option>
+                    <option value="jij" class="cidade">Jijoca</option>
+                    <option value="Mar" class="cidade">Maracanaú</option>
+                    <option value="Pac" class="cidade">Pacatuba</option>
+                    <option value="sob" class="cidade">Sobral</option>
+                </select>
+            </div>
+            <!-- NOTIFICAÇÃO -->
+            <div class="input-check">
+                Aceita receber notificações ?
+                <input type="checkbox" name="check" id="check">
+            </div>
+            <!-- BOTÃO -->
+            <div class="input-btn">
+                <input type="submit" value="enviar" onclick="exibirAlerta()">
+            </div>
+            
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
